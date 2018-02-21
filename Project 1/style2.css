@@ -1,0 +1,13 @@
+body{
+	background-color: lightblue;
+	margin: 0;
+}
+
+#squares div{
+	height: 20vw;
+	width: 20vw;
+	background-color: white;
+	margin: -2vw;
+	opacity: 0.5;
+	float: left;
+}

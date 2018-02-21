@@ -1,0 +1,30 @@
+body {
+	background-color: white;
+	margin: 0; 
+}
+
+#triangle-topleft {
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  top:0;
+  left:40;
+
+}
+
+#triangle-topleft #blue {
+  background-color:   hsl(180, 50%, 90%);
+
+}
+
+#triangle-topleft div {
+  width: 0;
+  height: 0;
+  border-top: 200px solid #F3D6E4;
+  border-right: 200px solid transparent;
+  float:left;
+  transform: rotate(45deg);
+  mix-blend-mode: overlay;
+
+}
+    

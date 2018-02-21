@@ -1,0 +1,35 @@
+body {
+	background-color: blanchedalmond; /* sweet blanched almond */
+	margin: 0; /* on most browsers the body has a 
+				  default margin of 8px */
+}
+#rect div{
+	height: 50vw;
+	width: 10vw;
+	background-color: #ff8080;
+	margin: 8;
+	float: left;
+}
+
+#circles {
+    width: 110vw; /* a little larger than the window */
+    position: fixed;
+    top: -5vw; /* moves the div above the 
+    			   frame of the window */
+    transform: roate(-15deg); /* yep, I'm rotating the whole
+    						   container ;) */
+}
+
+
+/* this is for all the <div> inside of
+	<div id="circles">
+	--> <div></div> <--
+*/
+#circles div {
+	height: 1vw;
+	width: 1vw;
+	background-color: lightpink;
+	border-radius: 20%;
+	margin: 5vw;
+	float: left;
+}
