@@ -1,0 +1,23 @@
+body {
+    background-color: #f0ede5;
+}
+h1 {
+    color: #2e4a62;
+     
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+h2 {
+	color: #B4B7BA;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: oblique;
+
+}
+a {
+    color: #c0ab8e;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+div{
+	text-align: center;
+}
