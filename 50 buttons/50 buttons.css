@@ -1,0 +1,230 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+.num {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+   	margin: 0;
+    
+    z-index: 5;
+}
+/* container */
+
+.container {
+	position: relative;
+}
+
+.button {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  line-height: 50px;
+}
+
+
+.large{
+	height: 100px;
+	width: 200px;
+	background: lightpink;
+	color: white;
+	overflow: hidden;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+	position:relative;
+}
+/* items */
+
+.item {
+	height: 100px;
+	width: 200px;
+	background: lightblue;
+	color: white;
+	overflow: hidden;
+
+	margin: 10px;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+	font-size: 20px;
+
+	/* uncomment this to get CSS transitions (conflicts with jQuery) */
+	/* transition: all 500ms ease; */
+}
+
+.circle-2 {
+	width:100px;
+    height:100px;
+    border-radius: 50px;
+    top: 50%
+    left:50%;
+    background-color: #3B8DAD;
+    transform: translate(50%);
+}
+
+/* example buttons */
+
+#button-1:hover {
+	background-color: white;
+	opacity: 0.5;
+}
+
+#button-1:active {
+	transform: translateX(100px);
+}
+
+/* example buttons */
+
+#button-2::before {
+	content: 'click';
+	color: white;
+	margin-left: 10px;
+}
+
+
+#button-2:active::after {
+	content: 'yes';
+	font-size: 30px;
+	color: green;
+}
+#button-4{
+	font-size: 20px;
+	font-weight: 100;
+}
+
+
+#button-5:active{
+	direction: rtl;
+}
+
+#square {
+	margin-top:25px;
+	margin-left: 75px;
+  	height: 50px;
+  	width: 50px;
+  	background-color: white;
+  	transition: all 1s;
+}
+#square:active {
+	border-radius: 50%;
+}
+
+#block{
+    background-color: #abc;
+    width: 40px;
+    height: 40px;
+}
+
+#block:active{
+	height:100px;
+	width:200px;
+}
+#button-12{
+	color:darkblue;
+	font-size: 30px;
+}
+
+#button-15:hover{
+	box-shadow: 10px 10px 5px lightpink;
+}
+
+#button-15:active{
+	height:300px;
+	width: 300px;
+	border-radius: 50%;
+	transform: rotate(360deg);
+	transition: all 2000ms ease;
+}
+
+#circle {
+	margin-top:5px;
+	margin-left: 75px;
+  	height: 50px;
+  	width: 50px;
+  	background-color: white;
+	border-radius: 50%;
+	transition: all 2s;
+}
+#circle:active {
+	background-color:pink;
+}
+
+#rect{
+	margin-left: 75px;
+	margin-top: 25px;
+  	height: 50px;
+  	width: 50px;
+  	background-color: pink;
+	border-radius: 20%;
+}
+
+#rect:hover{
+	background-color: white;
+	opacity:0.5;
+}
+
+#rect:active{
+	transform: scale(4, 2);
+	transition: all 1s;
+	border-radius: 0;
+}
+
+#button-19 {
+    background-color: pink;
+    transition: all 1000ms ease;
+}
+
+#button-19:active {
+    background-color: black;
+}
+
+#button-20:active {
+	transform: translate(200px);
+    background-color: lightblue;
+    transition: all 2000ms ease;
+
+}
+
+#button-21:active{
+	transform: rotate(180deg);
+	transition: all 1000ms ease;
+}
+
+#green{
+	background-color: #9ACD32;
+}
+
+#green:hover{
+	margin-left: 50px;
+	transform:scale(2,2);
+	transition: all 1000ms ease;
+}
+
+#purple{
+	background-color: plum;
+}
+#purple:active{
+    transform: rotateY(180deg);
+	transition: all 1000ms ease;
+}
+
+#button-25{
+	border-color: black;
+}
+
+/*#button-25:active{
+	opacity: 0;
+	transition: 1s;
+}*/
