@@ -1,19 +1,19 @@
 body{
 	height: 100vw;
-	background-color: #f9abbb;
+	background-color: pink;
 }
 
 #head{
 	position:fixed;
-	margin:-10px;
-	width: 1700px;
-	height: 1000px;
+	margin:-10vw;
+	width: 120vw;
+	height: 70vw;
 	background-color: white;
-	opacity: 50%;
 }
 
 #title {
-	padding:350px;
+	margin-top: 30vw;
+	margin-left: 48vw;
 	text-align: center;
 	font-size: 100px;
 	font-family: 'Raleway', sans-serif;
@@ -21,12 +21,19 @@ body{
 	color:#ff6f69;
 }
 
+.up-top{
+	font-size: 20px;
+	margin-top: 5%;
+}
+
+
 p{
-	letter-spacing: 5px;
+	position:fixed;
+	letter-spacing: 8px;
 	text-align: center;
-	font-size: 25px;
-	margin-left: 10px;
-	margin-top: 10px;
+	font-size: 50px;
+	margin-top: 10vw;
+	margin-left: 25vw;
 	font-family: 'Raleway', sans-serif;
 	font-weight: thin;
 	color: #ff6f69;
@@ -38,43 +45,25 @@ p.dotted {border-style: dotted;}
 
 
 #img1{
-	margin-top: 70px;
-	margin-left: 180px;
+	margin-top: 22vw;
+	margin-left: 39vw;
 	position:fixed;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    transition:1s;
 }
 
-#img2{
-	position:fixed;
-	margin-top: 350px;
-	margin-left: 650px;
-	width: 737px;
-    height: 350px;
+#img1:hover{
+	cursor: pointer;
+ 	animation: shake 0.5s;
+ 	animation-iteration-count: 2;
 }
 
-#img3{
-	position:fixed;
-	margin-top: 40px;
-	margin-left: 800px;
-	width: 350px;
-    height: 350px;
+@keyframes shake {
+	60% { transform: translate(-5px, 1px) rotate(-30deg); }
 }
 
-#img4{
-	position:fixed;
-	margin-top: 320px;
-	margin-left: 120px;
-	width: 400px;
-    height: 370px;
-}
 
-#broder{
-	margin:auto;
-	height:500px;
-	width: 1000px;
-	border: 6px solid #ff6f69;
-}
 
 /*img:hover { 
     transition: 2s;
@@ -102,138 +91,97 @@ p.dotted {border-style: dotted;}
 	display: none;
 }
 
+
 #a{
-	border-radius: 50%;
+	margin-top: -10px;
+	height: 100vw;
+	width: 10vw;
 	position:fixed;
 }
 
 .a{
-	margin-top: 330px;
-	margin-left: 800px;
-	height: 50px;
-	width: 50px;
+	margin-left: -10px;
 	background-color: #d7f0f7;
 }
 
 .a1{
-	margin-left: 1100px;
-	height: 90px;
-	width: 90px;
-	margin-top: 250px;
+	margin-left:9vw;
 	background-color: #c6e2ec;
 }
 
 .a2{
-	margin-left: 1200px;
-	height: 70px;
-	width: 70px;
-	margin-top: 330px;
+	margin-left: 19vw;
 	background-color: #aed9e5;
 }
 
 .a3{
-	height: 30px;
-	width: 30px;
-	margin-top:200px;
-	margin-left: 1100px;
+	margin-left: 29vw;
 	background-color: #d7f0f7;
 }
 
 .a4{
-	margin-top: 300px;
-	margin-left: 700px;
-	height: 50px;
-	width: 50px;
+	margin-left: 39vw;
 	background-color: #c6e2ec;
 }
 .a5{
-	margin-top: 300px;
-	margin-left: 900px;
-	height: 100px;
-	width: 100px;
+	margin-left: 49vw;
 	background-color: #d7f0f7;
 }
 
 .a6{
-	margin-top: 260px;
-	margin-left: 800px;
-	height: 90px;
-	width: 90px;
+	margin-left: 59vw;
 	background-color: #c6e2ec;
 }
 
 .a7{
-	margin-top: 340px;
-	margin-left: 850px;
-	height: 50px;
-	width: 50px;
+	margin-left: 69vw;
 	background-color: #d7f0f7;
 }
 
 .a8{
-	margin-top: 280px;
-	margin-left: 880px;
-	height: 80px;
-	width: 80px;
+	margin-left: 79vw;
 	background-color: #aed9e5;
 }
 
 .a9{
-	margin-top: 280px;
-	margin-left: 760px;
-	height: 30px;
-	width: 30px;
+	margin-left: 89vw;
 	background-color: #c6e2ec;
 }
 
 .a10{
-	margin-top: 320px;
-	margin-left: 730px;
-	height: 70px;
-	width: 70px;
+	margin-left: 99vw;
 	background-color: #aed9e5;
 }
 
-.a11{
-	margin-top: 320px;
-	margin-left: 1000px;
-	height: 60px;
-	width: 60px;
+/*.a11{
+	margin-left: 100vw;
 	background-color: #aed9e5;
-}
+}*/
 
-.a12{
-	margin-top: 330px;
-	margin-left: 1050px;
-	height: 80px;
-	width: 80px;
+/*.a12{
 	background-color: #d7f0f7;
 }
 
 .a13{
-	margin-top: 300px;
-	margin-left: 1100px;
-	height: 50px;
-	width: 50px;
 	background-color: #aed9e5;
 }
 
 .a14{
 	margin-top: 320px;
 	margin-left: 1120px;
-	height: 60px;
-	width: 60px;
+	height: 110px;
+	width: 110px;
 	background-color: #c6e2ec;
 }
 
 .a15{
 	margin-top: 290px;
 	margin-left: 1160px;
-	height: 70px;
-	width: 70px;
+	height: 120px;
+	width: 120px;
 	background-color: #d7f0f7;
 }
-
+*/
 /*.z{
 	float: left;
 	height:400px;

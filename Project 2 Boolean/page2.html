@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+$(document).ready(function(){
+    $("#tropical").on("click", function() {
+    	$("body").css("background-color", "orange");
+	});
+
+	$("#floral").on("click", function() {
+    	$("body").css("background-color", "#FF5B71");
+	});
+	$("#refreshing").on("click", function() {
+    	$("body").css("background-color", "#59D4BA");
+	});
+	$("#sweety").on("click", function() {
+    	$("body").css("background-color", "#FFE5C0");
+	});
+
+    $("#tropical").on("click", function() {
+    	// $(this).animate({opacity: 0},1000);
+    	$(".a").slideToggle(2000);
+    	$("p.tropicaltype").addClass("tropicallarge");
+    	// $(".tropicaltype").animate({opacity: 0},1000);
+    	$("p.floraltype").removeClass("florallarge");
+    	$("p.refreshingtype").removeClass("refreshinglarge");
+    	$("p.sweetytype").removeClass("sweetylarge");
+    	$(".b").fadeOut(500);
+    	$(".c").fadeOut(500);
+    	$(".d").fadeOut(500);
+	});
+
+
+    $("#floral").on("click", function() {
+    	$("p.floraltype").addClass("florallarge");
+    	$(".b").slideToggle(2000);
+    	$("p.tropicaltype").removeClass("tropicallarge");
+    	$("p.refreshingtype").removeClass("refreshinglarge");
+    	$("p.sweetytype").removeClass("sweetylarge");
+    	$(".a").fadeOut(500);
+    	$(".c").fadeOut(500);
+    	$(".d").fadeOut(500);
+	});
+
+	$("#refreshing").on("click", function() {
+    	$("p.refreshingtype").addClass("refreshinglarge");
+    	$(".c").slideToggle(2000);
+    	$("p.tropicaltype").removeClass("tropicallarge");
+    	$("p.floraltype").removeClass("florallarge");
+    	$("p.sweetytype").removeClass("sweetylarge");
+    	$(".a").fadeOut(500);
+    	$(".b").fadeOut(500);
+    	$(".d").fadeOut(500);
+	});
+
+	$("#sweety").on("click", function() {
+    	$("p.sweetytype").addClass("sweetylarge");
+    	$(".d").slideToggle(2000);
+    	$("p.tropicaltype").removeClass("tropicallarge");
+    	$("p.floraltype").removeClass("florallarge");
+    	$("p.refreshingtype").removeClass("refreshinglarge");
+    	$(".a").fadeOut(500);
+    	$(".b").fadeOut(500);
+    	$(".c").fadeOut(500);
+	});
+
+    // $("#floral").click(function () {
+    //       $("#square").show("slide", { direction: "left" }, 1000);
+    // });
+});
+
+	
+</script>
+
+<style>
+
+body{
+	background-color: pink;
+	transition: all 2s;
+}
+
+.img{
+	float:left;
+	margin-top: 20vw;
+	margin-left: 200px;
+	height: 10vw;
+	width: 10vw;
+	z-index: -1;
+}
+
+.img:hover{
+	transform: scale(1.2);
+	transition: .5s;
+}
+
+.pointer {cursor: pointer;}
+
+#square{
+	position: fixed;
+	margin-top: -2vw;
+	height: 60vw;
+	width: 25vw;
+	display: none;
+	z-index: 3;
+}
+
+.a{
+	margin-left: 4vw;
+	background-color: #FEE8B7;
+}
+
+.b{
+	margin-left: 25vw;
+	background-color: #FFDFDD;
+}
+
+.c{
+	margin-left: 48vw;
+	background-color: #D4E5E3;
+}
+.d{
+	margin-left: 70vw;
+	background-color: #A27C53;
+}
+
+#name{
+	position:absolute;
+	letter-spacing: 8px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.floraltype{
+	margin-left: 35vw;
+	margin-top: 32vw;
+	font-size: 25px;
+	font-weight: thin;
+	color: white;
+}
+
+.tropicaltype{
+	margin-left: 13vw;
+	margin-top: 32vw;
+	font-size: 25px;
+	font-weight: thin;
+	color: white;
+}
+
+.refreshingtype{
+	margin-left: 55vw;
+	margin-top: 32vw;
+	font-size: 25px;
+	font-weight: thin;
+	color: white;
+}
+
+.sweetytype{
+	margin-left: 79vw;
+	margin-top: 32vw;
+	font-size: 25px;
+	font-weight: thin;
+	color: white;
+}
+
+.florallarge{
+	transform: scale(1.5);
+	transform: translate(-2vw);
+	font-size: 50px;
+	font-weight: bold;
+	color: #F8D176;
+}
+.tropicallarge{
+	transform: scale(1.5);
+	transform: translate(-3.5vw);
+	font-size: 50px;
+	font-weight: bold;
+	color: #F4E6CD;
+}
+
+.refreshinglarge{
+	transform: scale(1.5);
+	transform: translate(-3.5vw);
+	font-size: 50px;
+	font-weight: bold;
+	color: #9B0B4D;
+}
+
+.sweetylarge{
+	transform: scale(1.5);
+	transform: translate(-3.5vw);
+	font-size: 50px;
+	font-weight: bold;
+	color: #F34A75;
+}
+
+h1 {
+	margin-top: 2vw;
+	position: relative;
+	font: 100px Raleway, Sans-Serif;
+	letter-spacing: -5px;
+	color: #FFCB2B;
+}
+
+h1:after {
+	content: "Piña Colada";
+	position: absolute; left: 10px; top: 5px;
+	color: #8B5E3D;
+}
+
+h2 {
+	margin-top: 2vw;
+	position: relative;
+	font: 80px Raleway, Sans-Serif;
+	letter-spacing: -5px;
+	color: #E3AED0;
+}
+
+h2:after {
+	content: "Lavender Bee's Knees";
+	position: absolute; left: 8px; top: 4px;
+	color: #7B094F;
+}
+
+h3 {
+	margin-top: 2vw;
+	position: relative;
+	font: 90px Raleway, Sans-Serif;
+	letter-spacing: -5px;
+	color: #71B89B;
+}
+
+h3:after {
+	content: "Mint Mojito";
+	position: absolute; left: 10px; top: 5px;
+	color: #003B29;
+}
+
+h4 {
+	margin-top: 2vw;
+	position: relative;
+	font: 90px Raleway, Sans-Serif;
+	letter-spacing: -5px;
+	color: #EFD6AD;
+}
+
+h4:after {
+	content: "Milk Pounch";
+	position: absolute; left: 8px; top: 4px;
+	color: #603214;
+}
+
+p#rum{
+	margin-left: 1vw;
+	letter-spacing: 2px;
+	text-align: left;
+	font-weight: thin;
+	font-family: 'Raleway', sans-serif;
+}
+
+#rum{
+	margin-top: 5vw;
+}
+
+#rumsmall{
+	font-size: 10px;
+	margin-left: 1vw;
+	letter-spacing: 2px;
+	text-align: left;
+	font-weight: thin;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 5vw;
+}
+
+</style>
+</head>
+<body>
+	<div class="pointer">
+		<div id="square" class="a">
+			<h1>Piña Colada</h1>
+			<p id="rum"><img src="rum.png" alt="rum" width="80" height="90" align="middle"><img src="rum.png" alt="rum" width="80" height="90" align="middle" hspace="20">2oz White Rum</p>
+			<p id="rum"><img src="pineapple.png" alt="pineapple" width="80" height="80" align="middle"><img src="pineapple.png" alt="pineapple" width="80" height="80" align="middle">2oz Pineapple Juice</p>
+			<p id="rum"><img src="coconut.png" alt="coconut" width="80" height="80" align="middle"><img src="cream.png" alt="cream" width="80" height="80" align="middle" hspace="10">2oz Coconut Cream</p>
+		</div>
+		<div id="square" class="b">
+			<h2>Lavender Bee's Knees</h2>
+			<p id="rum"><img src="rum.png" alt="rum" width="80" height="90" align="middle"><img src="rum.png" alt="rum" width="80" height="90" align="middle" hspace="20">2oz Gin</p>
+			<p id="rumsmall"><img src="lavender.png" alt="lavender" width="65" height="80" align="middle" hspace="20"><img src="honey.png" alt="honey" width="80" height="80" align="middle">3/4oz Lavender honey syrup</p>
+			<p id="rum"><img src="lemon.png" alt="lemon" width="80" height="80" align="middle" hspace="20">1oz Lemon Juice</p>
+		</div>
+		<div id="square" class="c">
+			<h3>Mint Mojito</h3>
+			<p id="rum"><img src="rum.png" alt="rum" width="80" height="90" align="middle"><img src="rum.png" alt="rum" width="40" height="45" align="middle" hspace="20">1 1/2oz White Rum</p>
+			<p id="rum"><img src="lemon.png" alt="lemon" width="80" height="80" align="middle" hspace="20">1oz Lemon Juice</p>
+			<p id="rum"><img src="sugar.png" alt="sugar" width="80" height="80" align="middle" hspace="20">2 teaspoon Suger</p>
+			<p id="rum"><img src="soda.png" alt="soda" width="80" height="80" align="middle" hspace="20">Soda Water</p>
+		</div>
+		<div id="square" class="d">
+			<h4>Milk Pounch</h4>
+			<p id="rum"><img src="bourbon.png" alt="bourbon" width="80" height="90" align="middle"><img src="bourbon.png" alt="bourbon" width="20" height="22.5" align="middle" hspace="20">1 1/4oz Bourbon</p>
+			<p id="rum"><img src="darkrum.png" alt="darkrum" width="40" height="45" align="middle" hspace="20">1/2oz Dark Rum</p>
+			<p id="rum"><img src="milk.png" alt="milk" width="80" height="80" align="middle"><img src="milk.png" alt="milk" width="80" height="80" align="middle">2oz Milk/Cream/Half-half</p>
+			<p id="rum"><img src="syrup.png" alt="syrup" width="80" height="80" align="middle" hspace="20">1/2oz Syrup</p>
+		</div>
+		<div>
+			<img id="tropical" class="img" src="tropical.png" alt="tropical">
+			<p id="name" class="tropicaltype">Tropical</p>
+		</div>
+
+		
+		<div>
+			<img id="floral" class="img" src="floral.png" alt="floral">
+			<p id="name" class="floraltype">Floral</p>
+		</div>
+		<div>
+			<img id="refreshing" class="img" src="refreshing.png" alt="refreshing">
+			<p id="name" class="refreshingtype">Refreshing</p>
+		</div>
+		<div>
+			<img id="sweety" class="img" src="sweety.png" alt="sweety">
+			<p id="name" class="sweetytype">Sweety</p>
+		</div>
+	</div>
+
+
+</body>
+</html>
