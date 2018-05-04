@@ -1,0 +1,470 @@
+body{
+	margin:0;
+	padding: 0;
+	background: -webkit-linear-gradient(180deg, #001EF4 10%, #00033E 40%, #DF3124 49%, white 50%, #DF3124 51%, #00033E 60%);
+	/*#DF3124 red
+	#001EF4 lightblue
+	#000C8D blue*/
+}
+h1{
+	margin:0;
+	font-size: 60px;
+	margin-left: 50%;
+	text-align: center;
+	line-height: 1.5;
+	font-family: 'Quantico', sans-serif;
+	font-weight: bold;
+}
+
+p{
+	float:left;
+	margin: 10px;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	line-height: 1;
+	font-family: 'Quantico', sans-serif;
+	font-weight: lighter;
+	letter-spacing: 2px;
+}
+
+.black{
+	background-color: white;
+	color: black;
+}
+
+#real{
+	display: none;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    text-shadow: 1px 1px 2px black, 0 0 40px red, 0 0 20px darkred;
+	font-weight: lighter;
+}
+
+#head{
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+  	width: 100%;
+	background-color: black;
+	color: white;
+	border-bottom: 3px solid white;
+}
+
+#bottom{
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+  	width: 100%;
+	background-color: black;
+	color: white;
+	border-top: 3px solid white;
+}
+
+#foot{
+	color: white;
+	margin-left: 50%;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Quantico', sans-serif;
+	letter-spacing: 1px;
+}
+
+#box{
+	float: left;
+	margin-top: 6%;
+/*	margin-top: 6%;*/
+	padding:20px;
+	width: 45%;
+	height: 2000px;
+/*	border: 5px solid red;*/
+/*	background-color: rgba(0,0,0,.8);*/
+}
+
+#square{
+	margin-left: 60%;
+	margin-top: 28%;
+	position: fixed;
+	height: 50px;
+	width: 10px;
+	background-color: white;
+}
+
+#review{
+	position: fixed;
+	margin-top: 31%;
+	height: 50px;
+	width: 400px;
+	border-left: 3px solid red;
+}
+
+#comment{
+	margin-left:5px;
+	color: white;
+	text-align: left;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'Quantico', sans-serif;
+	letter-spacing: 3px;
+}
+
+.r0{
+	opacity: 0;
+	margin-left: 60%;
+}
+
+.r1{
+	opacity: 0;
+	margin-left: 61%;
+}
+.r2{
+	opacity: 0;
+	margin-left: 62%;
+}
+.r3{
+	opacity: 0;
+	margin-left: 63%;
+}
+.r4{
+	opacity: 0;
+	margin-left: 64%;
+}
+.r5{
+	opacity: 0;
+	margin-left: 65%;
+}
+.r6{
+	opacity: 0;
+	margin-left: 66%;
+}
+.r7{
+	opacity: 0;
+	margin-left: 67%;
+}
+.r8{
+	opacity: 0;
+	margin-left: 68%;
+}
+.r9{
+	opacity: 0;
+	margin-left: 69%;
+}
+.r10{
+	opacity: 0;
+	margin-left: 70%;
+}
+.r11{
+	opacity: 0;
+	margin-left: 71%;
+}
+
+.r12{
+	opacity: 0;
+	margin-left: 72%;
+}
+.r13{
+	opacity: 0;
+	margin-left: 73%;
+}
+
+.r14{
+	opacity: 0;
+	margin-left: 74%;
+}
+
+.r15{
+	opacity: 0;
+	margin-left: 75%;
+}
+.r16{
+	opacity: 0;
+	margin-left: 76%;
+}
+.r17{
+	opacity: 0;
+	margin-left: 77%;
+}
+.r18{
+	opacity: 0;
+	margin-left: 78%;
+}
+.r19{
+	opacity: 0;
+	margin-left: 79%;
+}
+.r20{
+	opacity: 0;
+	margin-left: 80%;
+}
+.r21{
+	opacity: 0;
+	margin-left: 81%;
+}
+.r22{
+	opacity: 0;
+	margin-left: 82%;
+}
+.r23{
+	opacity: 0;
+	margin-left: 83%;
+}
+.r24{
+	opacity: 0;
+	margin-left: 84%;
+}
+.r25{
+	opacity: 0;
+	margin-left: 85%;
+}
+.r26{
+	opacity: 0;
+	margin-left: 86%;
+}
+.r27{
+	opacity: 0;
+	margin-left: 87%;
+}
+.r28{
+	opacity: 0;
+	margin-left: 88%;
+}
+
+
+.c0:hover{
+	transform: scale(1.1);
+}
+.c0:hover ~ div.r0{
+	opacity: 1;
+/*	transition: .5s;*/
+}
+.c1:hover{
+	transform: scale(1.1);
+}
+.c1:hover ~ div.r1{
+	opacity: 1;
+}
+
+.c2:hover{
+	transform: scale(1.1);
+}
+.c2:hover ~ div.r2{
+	opacity: 1;
+}
+.c3:hover{
+	transform: scale(1.1);
+}
+.c3:hover ~ div.r3{
+	opacity: 1;
+}
+.c4:hover{
+	transform: scale(1.1);
+}
+.c4:hover ~ div.r4{
+	opacity: 1;
+}
+
+.c5:hover{
+	transform: scale(1.1);
+}
+.c5:hover ~ div.r5{
+	opacity: 1;
+}
+.c6:hover{
+	transform: scale(1.1);
+}
+.c6:hover ~ div.r6{
+	opacity: 1;
+}
+.c7:hover{
+	transform: scale(1.1);
+}
+.c7:hover ~ div.r7{
+	opacity: 1;
+}
+.c8:hover{
+	transform: scale(1.1);
+}
+.c8:hover ~ div.r8{
+	opacity: 1;
+}
+.c9:hover{
+	transform: scale(1.1);
+}
+.c9:hover ~ div.r9{
+	opacity: 1;
+}
+.c10:hover{
+	transform: scale(1.1);
+}
+.c10:hover ~ div.r10{
+	opacity: 1;
+}
+.c11:hover{
+	transform: scale(1.1);
+}
+.c11:hover ~ div.r11{
+	opacity: 1;
+}
+.c12:hover{
+	transform: scale(1.1);
+}
+.c12:hover ~ div.r12{
+	opacity: 1;
+}
+.c13:hover{
+	transform: scale(1.1);
+}
+.c13:hover ~ div.r13{
+	opacity: 1;
+}
+.c14:hover{
+	transform: scale(1.1);
+}
+.c14:hover ~ div.r14{
+	opacity: 1;
+}
+.c15:hover{
+	transform: scale(1.1);
+}
+.c15:hover ~ div.r15{
+	opacity: 1;
+}
+.c16:hover{
+	transform: scale(1.1);
+}
+.c16:hover ~ div.r16{
+	opacity: 1;
+}
+.c17:hover{
+	transform: scale(1.1);
+}
+.c17:hover ~ div.r17{
+	opacity: 1;
+}
+.c18:hover{
+	transform: scale(1.1);
+}
+.c18:hover ~ div.r18{
+	opacity: 1;
+}
+.c19:hover{
+	transform: scale(1.1);
+}
+.c19:hover ~ div.r19{
+	opacity: 1;
+}
+.c20:hover{
+	transform: scale(1.1);
+}
+.c20:hover ~ div.r20{
+	opacity: 1;
+}
+.c21:hover{
+	transform: scale(1.1);
+}
+.c21:hover ~ div.r21{
+	opacity: 1;
+}
+.c22:hover{
+	transform: scale(1.1);
+}
+.c22:hover ~ div.r22{
+	opacity: 1;
+}
+.c23:hover{
+	transform: scale(1.1);
+}
+.c23:hover ~ div.r23{
+	opacity: 1;
+}
+
+.c24:hover{
+	transform: scale(1.1);
+}
+.c24:hover ~ div.r24{
+	opacity: 1;
+}
+.c25:hover{
+	transform: scale(1.1);
+}
+.c25:hover ~ div.r25{
+	opacity: 1;
+}
+
+.c26:hover{
+	transform: scale(1.1);
+}
+.c26:hover ~ div.r26{
+	opacity: 1;
+}
+.c27:hover{
+	transform: scale(1.1);
+}
+.c27:hover ~ div.r27{
+	opacity: 1;
+}
+.c28:hover{
+	transform: scale(1.1);
+}
+.c28:hover ~ div.r28{
+	opacity: 1;
+}
+
+
+
+#play{
+	height: 300px;
+	width: 288px;
+	position: fixed;
+	margin-top: 5%;
+	margin-left: 20%;
+}
+
+#start{
+	height: 300px;
+	width: 300px;
+	position: fixed;
+	margin-top: 5%;
+	margin-left: 65%;
+	opacity: 0;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	color: black;
+	text-align: center;
+	line-height: 300px;
+	font-size: 80px;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 3px;
+	border-radius: 50%;
+}
+
+#start:hover{
+	transition: 0.5s;
+	opacity:0.9;
+	cursor: pointer;
+}
+
+.spin{
+	-webkit-animation: rotation 2s infinite linear;
+	animation: rotation 2s infinite linear;
+}
+
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
